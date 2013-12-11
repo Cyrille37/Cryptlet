@@ -95,7 +95,7 @@ input, button, select {
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    /*background: url("/images/tab-bg-2.gif") repeat-x scroll left bottom #F4F8FD;*/
+    background: #F4F8FD;
     border-image: none;
     border-style: solid;
     border-width: 1px;

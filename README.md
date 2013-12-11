@@ -3,6 +3,8 @@ Cryptlet
 
 A bookmarklet that perform cryptographic operation.
 
+The bookmarklet Cryptlet will encrypt selected text in a textarea or an input field, and will decrypt a text outside of a field. It's very usefull for wiki or other kind of CMS to store secret stuff in a public or not so secured place.
+
 LICENSE
 ========
 

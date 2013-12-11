@@ -1,16 +1,15 @@
 
 function cryptlet() {
   if( document.activeElement && document.activeElement.type != undefined) {
-	
-		encrypt();
+		cryptlet_encrypt();
 	}
 	else {
-		decrypt();
+		cryptlet_decrypt();
 	}
 }
-function encrypt()
+
+function cryptlet_encrypt()
 {
-	console.log('encrypt');
 	var ae = document.activeElement ;
 	if( ae.type == 'textarea' || ae.type == 'text')
 	{
@@ -19,14 +18,14 @@ function encrypt()
 		{
 			console.log("SEL: "+ s+", "+e);
 			text = ae.value.substring(s,e);
-			pass = prompt("Enter password :");
+			pass = prompt("To encrypt, enter password :");
 			code = sjcl.encrypt(pass, text);
 			ae.value = ae.value.substring(0,s) + code + ae.value.substring(e);
 		}
 	}
 }
 
-function decrypt()
+function cryptlet_decrypt()
 {
 	console.log('decrypt');
 	var code = '';
@@ -40,7 +39,7 @@ function decrypt()
 	console.log('code: '+code.length);
 	if( code.length>0 )
 	{
-		pass = prompt("Enter password :");
+		pass = prompt("To decrypt, enter password :");
 		clear = sjcl.decrypt(pass, code);
 		alert(clear);
 	}
