@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Cryptlet</title>
+				<meta name="author" content="Cyrille Giquello" />
+				<meta name="description" content="A bookmarklet that perform cryptographic operation" />
+				<meta name="keywords" content="bookmarklet,cryptography" />
+				<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+    </head>
+    <body>
+        <h1>Cryptlet</h1>
+
+				<p>
+					<a onclick="return false;" href="javascript:(
+					function(){
+
+					s=document.createElement(&#34;script&#34;);
+					s.type=&#34;text/javascript&#34;;
+					s.src=&#34;./sjcl.js&#34;;
+					document.body.appendChild(s);
+
+					s=document.createElement(&#34;script&#34;);
+					s.type=&#34;text/javascript&#34;;
+					s.src=&#34;./cryptlet-essais01.js&#34;;
+					document.body.appendChild(s);
+					}());" class="bookmarkletButton">Cryptlet</a>
+				</p>        
+        <form>
+					<textarea>bla bla</textarea>
+					<input type="text" value="toto titi"/>
+        </form>
+        <p>{"iv":"gxYJ1tLnE4+JF/5rszGhPA==","v":1,"iter":1000,"ks":128,"ts":64,"mode":"ccm","adata":"","cipher":"aes","salt":"oB7UPG33FvU=","ct":"Q62G3YepyqDwi8zAFtGJO08="}</p>
+
+<h2>Reading</h2>
+<ul>	
+	<li><a href="http://en.wikipedia.org/wiki/Bookmarklet">Bookmarklet</a> on Wikipedia</li>
+	<li><a href="http://coding.smashingmagazine.com/2010/05/23/make-your-own-bookmarklets-with-jquery/">Make Your Own Bookmarklets With jQuery</a></li>
+</ul>
+    </body>
+</html>
