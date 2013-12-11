@@ -19,18 +19,20 @@
 
 					s=document.createElement(&#34;script&#34;);
 					s.type=&#34;text/javascript&#34;;
-					s.src=&#34;./sjcl.js&#34;;
+					s.src=&#34;./sjcl.js&#34;; /* <- Change the URL here */
 					document.body.appendChild(s);
 
 					s=document.createElement(&#34;script&#34;);
 					s.type=&#34;text/javascript&#34;;
-					s.src=&#34;./cryptlet-essais01.js&#34;;
+					s.src=&#34;./cryptlet-essais01.js&#34;; /* <- Change the URL here too */
 					document.body.appendChild(s);
 					}());" class="bookmarkletButton">Cryptlet</a>
 				</p> 
 				<p>The bookmarklet Cryptlet will encrypt selected text in a textarea or an input field, and will decrypt a text outside of a field. It's very usefull for wiki or other kind of CMS to store secret stuff in a public or not so secured place.</p>
+
 				<h2>Demo</h2>
 
+				<p>To make the demo works you need to copy all files at the same place as this file demo.html. If you want to use it in "real life" you need to change the url in the bookmarklet javascript code to match you website. Happily, you can find <b>an already "in real life" working version</b> installed at <a href="http://comptoir.net">http://comptoir.net</a>.</p>
         <form>
 					Here is the clear text : <br/>
 					<textarea cols="64">Le mot progrès n'aura aucun sens tant qu'il y aura des enfants malheureux ~ Albert Einstein</textarea>
