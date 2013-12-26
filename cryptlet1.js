@@ -1,4 +1,3 @@
-
 function cryptlet() {
   if( document.activeElement && document.activeElement.type != undefined) {
 		cryptlet_encrypt();
